@@ -46,7 +46,7 @@
         <div class="mt-16 pt-12 border-t border-white/15">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                 <div>
-                    <h3 class="text-xl font-bold text-white">Classroom Environments at HMPS</h3>
+                    <h3 class="text-xl font-bold text-white">Classroom Environments at {{ $school['short'] ?? 'KSNPS' }}</h3>
                     <p class="text-xs sm:text-sm text-slate-300">Bright, airy, well-furnished spaces fostering student concentration.</p>
                 </div>
                 <a href="#gallery" class="text-sm font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
@@ -56,7 +56,7 @@
 
             <div class="grid gap-4 sm:grid-cols-3">
                 <div class="relative rounded-xl overflow-hidden h-52 group">
-                    <img src="{{ asset('images/classroom1.jpeg') }}" alt="Classroom interior at HMPS" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('images/classroom1.jpeg') }}" alt="Classroom interior at {{ $school['name'] }}" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
                         <span class="text-xs font-bold text-white">Smart Classroom 1</span>
                     </div>
@@ -91,7 +91,7 @@
                 <div class="section-rule mt-5"></div>
 
                 <p class="mt-6 text-base sm:text-lg leading-relaxed text-slate-600">
-                    We understand that punctual, secure commute is top priority for parents. Happy Model Public School operates dedicated school vans with disciplined drivers and care attendants to ensure children travel safely between home and campus.
+                    We understand that punctual, secure commute is top priority for parents. {{ $school['name'] }} operates dedicated school vans with disciplined drivers and care attendants to ensure children travel safely between home and campus.
                 </p>
 
                 <div class="mt-8 grid gap-4 sm:grid-cols-2">
@@ -135,7 +135,7 @@
             <div class="relative overflow-hidden rounded-3xl shadow-2xl border border-slate-200 group">
                 <img src="{{ asset(ltrim($transportImage, '/')) }}" alt="{{ $school['name'] }} transport van" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#07192f] via-[#07192f]/70 to-transparent p-6 text-white">
-                    <span class="rounded bg-amber-400 px-2 py-0.5 text-xs font-black text-slate-950 uppercase">HMPS Fleet</span>
+                    <span class="rounded bg-amber-400 px-2 py-0.5 text-xs font-black text-slate-950 uppercase">{{ $school['short'] ?? 'KSNPS' }} Fleet</span>
                     <h3 class="mt-2 font-serif text-xl font-bold">Safe & Supervised Van Travel</h3>
                     <p class="text-xs text-slate-200 mt-1">Convenient daily pickup and drop routines for student comfort.</p>
                 </div>

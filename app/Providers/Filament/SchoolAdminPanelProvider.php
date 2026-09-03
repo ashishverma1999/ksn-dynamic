@@ -28,6 +28,7 @@ class SchoolAdminPanelProvider extends PanelProvider
             ->id('schoolAdmin')
             ->path('schoolAdmin')
             ->login()
+            ->brandName('KSN Public School Admin')
             ->colors([
                 'primary' => Color::Amber,
             ])
@@ -39,7 +40,6 @@ class SchoolAdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 AccountWidget::class,
-                FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

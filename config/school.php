@@ -2,19 +2,19 @@
 
 return [
     'profile' => [
-        'name' => 'Happy Model Public School',
-        'short' => 'HMPS',
+        'name' => 'KSN Public School',
+        'short' => 'KSNPS',
         'logo' => '/images/logo.png',
-        'tagline' => 'Nurturing confident learners from Pre-Nursery to Class XII with values, discipline and academic excellence.',
-        'subheading' => 'English Medium Co-Educational K-12 Institution (Pre to 12th) | Mungra Badshahpur, Jaunpur',
+        'tagline' => 'Nurturing confident, creative, and ethical learners from Pre-Nursery to Class XII with modern education, discipline, and core values.',
+        'subheading' => 'Premier English Medium Co-Educational K-12 Institution (Pre to 12th) | Mungra Badshahpur, Jaunpur',
         'affiliation' => 'Recognized & Following Modern Progressive Curriculum (Pre-Nursery to Class XII)',
-        'email' => 'info@happymodelpublicschool.in',
+        'email' => 'info@ksnpublicschool.edu.in',
         'phone' => '+91 93692 47677',
         'alternate_phone' => '+91 76076 03165',
         'whatsapp' => '919793856502',
         'whatsapp_display' => '+91 97938 56502',
         'location' => 'Mungra Badshahpur, Jaunpur, Uttar Pradesh',
-        'address' => 'Happy Model Public School, Mungra Badshahpur, Jaunpur, Uttar Pradesh 222202',
+        'address' => 'KSN Public School, Mungra Badshahpur, Jaunpur, Uttar Pradesh 222202',
         'timing' => 'Monday to Saturday: 8:00 AM – 2:00 PM',
         'office_timing' => 'Monday to Saturday: 8:00 AM – 3:30 PM',
         'facebook' => 'https://facebook.com',
@@ -24,7 +24,7 @@ return [
     ],
 
     'navigation' => [
-        'About HMPS' => [
+        'About KSNPS' => [
             ['label' => 'About Overview', 'href' => '#about'],
             ['label' => 'Vision & Mission', 'href' => '#vision-mission'],
             ['label' => 'Leadership Desk', 'href' => '#leadership'],
@@ -39,8 +39,8 @@ return [
         'Campus Life' => [
             ['label' => 'Facilities & Labs', 'href' => '#facilities'],
             ['label' => 'Transport Facility', 'href' => '#transport'],
+            ['label' => 'Birthday Stars & Celebrations', 'href' => '#birthdays'],
             ['label' => 'Photo & Event Gallery', 'href' => '#gallery'],
-            ['label' => 'Activities & Sports', 'href' => '#gallery'],
         ],
         'Admissions' => [
             ['label' => 'Admission Process', 'href' => '#admission-process'],
@@ -52,6 +52,8 @@ return [
 
     'quick_links' => [
         ['label' => 'Online Admission Enquiry (Pre – 12th)', 'url' => '#admissions', 'icon' => 'form'],
+        ['label' => 'Today & Monthly Birthday Stars 🎉', 'url' => '#birthdays', 'icon' => 'star'],
+        ['label' => 'Parent & Student Testimonials ⭐', 'url' => '#reviews', 'icon' => 'review'],
         ['label' => 'Explore 360° Photo Gallery', 'url' => '#gallery', 'icon' => 'photo'],
         ['label' => 'Campus Facilities & Science Labs', 'url' => '#facilities', 'icon' => 'facility'],
         ['label' => 'School Van & Transport Routes', 'url' => '#transport', 'icon' => 'bus'],
@@ -197,15 +199,15 @@ return [
         [
             'title' => "Chairman's Message",
             'name' => 'Prof. Rajendra Prasad Singh',
-            'role' => 'Chairman, HMPS',
+            'role' => 'Chairman, KSNPS',
             'designation' => 'Ex. Dean - Social Science | Ex. HOD Psychology Department, MGKVP Varanasi',
             'image' => '/images/chairman.jpeg',
-            'text' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At Happy Model Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student from early childhood to Class XII.',
+            'text' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At KSN Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student from early childhood to Class XII.',
         ],
         [
             'title' => "Director's Message",
             'name' => 'Dr. Anshuman Singh',
-            'role' => 'Director, HMPS',
+            'role' => 'Director, KSNPS',
             'designation' => 'Assistant Professor & HOD Hindi Department, BPGC | D.Phil from Allahabad University',
             'image' => '/images/director.jpeg',
             'text' => 'Our vision is to provide an inclusive and intellectually stimulating academic environment where every student discovers their unique strengths. From foundational play-way learning to senior secondary stream mastery, we combine rich linguistic proficiency and cultural values with progressive teaching methodologies.',
@@ -213,16 +215,16 @@ return [
         [
             'title' => "Principal's Message",
             'name' => 'Smt. Rajbala Singh',
-            'role' => 'Principal, HMPS',
+            'role' => 'Principal, KSNPS',
             'designation' => 'M.A., B.Ed. | Experienced Educator & Instructional Leader',
             'image' => '/images/principal.jpeg',
             'text' => 'Every child possesses immense potential waiting to be nurtured with care and discipline. Our dedicated team of educators is committed to providing personalized attention, encouraging active inquiry, hands-on lab experiments, and building strong study habits for lifelong success.',
         ],
         [
             'title' => "Vice Principal's Message",
-            'name' => 'Dr Abhilaksha singh',
-            'role' => 'Vice Principal, HMPS',
-            'designation' => 'M.Sc Gold Medalist | D.phil Botany | B .Ed  Academic Coordinator & Student Activities Head',
+            'name' => 'Dr. Abhilaksha Singh',
+            'role' => 'Vice Principal, KSNPS',
+            'designation' => 'M.Sc Gold Medalist | D.Phil Botany | B.Ed | Academic Coordinator & Student Activities Head',
             'image' => '/images/vice_principal.jpeg',
             'text' => 'We believe in a harmonious blend of scholastic rigor and co-curricular vibrancy. By cultivating disciplined routines, creative expression, competitive exam foundation, and good habits, we prepare our learners to face future challenges with optimism.',
         ],
@@ -234,14 +236,14 @@ return [
             'role' => 'Parent of Class XII Student (Science)',
             'image' => '/images/school_building.jpeg',
             'rating' => 5,
-            'text' => 'The senior secondary faculty for 11th and 12th science is outstanding. The practical laboratories, regular test series, and board guidance helped my daughter gain immense clarity and confidence for her upcoming exams.',
+            'text' => 'The senior secondary faculty for 11th and 12th science is outstanding at KSN Public School. The practical laboratories, regular test series, and board guidance helped my daughter gain immense clarity and confidence for her upcoming exams.',
         ],
         [
             'name' => 'Sunita Srivastava',
             'role' => 'Parent of Pre-Nursery Student',
             'image' => '/images/classroom1.jpeg',
             'rating' => 5,
-            'text' => 'The kindergarten teachers are very caring and patient. My daughter loves going to school every morning. The environment is safe, clean, and filled with creative fun activities.',
+            'text' => 'The kindergarten teachers are very caring and patient. My daughter loves going to KSN Public School every morning. The environment is safe, clean, and filled with creative fun activities.',
         ],
         [
             'name' => 'Manoj Gupta',
@@ -255,14 +257,14 @@ return [
             'role' => 'Parent of Class IV Student',
             'image' => '/images/classroom3.jpeg',
             'rating' => 5,
-            'text' => 'Extracurricular events like Independence Day celebrations, science exhibitions and sports day are organized with great enthusiasm. Happy Model Public School provides complete holistic learning from nursery to 12th.',
+            'text' => 'Extracurricular events like Independence Day celebrations, science exhibitions and sports day are organized with great enthusiasm. KSN Public School provides complete holistic learning from nursery to 12th.',
         ],
     ],
 
     'faqs' => [
         [
-            'q' => 'What classes and academic streams are offered at HMPS?',
-            'a' => 'Happy Model Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
+            'q' => 'What classes and academic streams are offered at KSN Public School?',
+            'a' => 'KSN Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
         ],
         [
             'q' => 'What is the admission procedure for the new session?',
@@ -270,7 +272,7 @@ return [
         ],
         [
             'q' => 'What laboratory facilities are available for Secondary & Senior Secondary students?',
-            'a' => 'HMPS features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
+            'a' => 'KSNPS features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
         ],
         [
             'q' => 'What are the school operating hours?',
@@ -278,14 +280,14 @@ return [
         ],
         [
             'q' => 'Is transport (school van) available for all classes?',
-            'a' => 'Yes, Happy Model Public School provides supervised school van services covering multiple designated routes in Mungra Badshahpur and neighboring areas. Please consult the school office for specific route stops.',
+            'a' => 'Yes, KSN Public School provides supervised school van services covering multiple designated routes in Mungra Badshahpur and neighboring areas. Please consult the school office for specific route stops.',
         ],
         [
             'q' => 'What documents are required during admission?',
             'a' => 'Documents required include: Child\'s Birth Certificate, 4 Passport-size photographs of the student, 2 passport photos of parents/guardians, Aadhaar card copy, and previous school Transfer Certificate (TC) / Report card / Marksheet for Class I and above.',
         ],
         [
-            'q' => 'What is the medium of instruction at HMPS?',
+            'q' => 'What is the medium of instruction at KSN Public School?',
             'a' => 'The medium of instruction is English, with equal emphasis on strong proficiency in Hindi, Sanskrit, and foundational communication skills.',
         ],
     ],

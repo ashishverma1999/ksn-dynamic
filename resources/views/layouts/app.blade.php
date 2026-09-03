@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $pageDescription ?? 'Happy Model Public School - Premier English Medium School in Mungra Badshahpur, Jaunpur' }}">
-    <meta name="keywords" content="Happy Model Public School, HMPS, School in Mungra Badshahpur, Best School in Jaunpur, English Medium School, Admissions 2026-27">
+    <meta name="description" content="{{ $pageDescription ?? 'KSN Public School - Premier English Medium School in Mungra Badshahpur, Jaunpur' }}">
+    <meta name="keywords" content="KSN Public School, KSNPS, Best School in Mungra Badshahpur, Top School in Jaunpur, English Medium School, Admissions 2026-27">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <!-- OpenGraph / Social Meta -->
-    <meta property="og:title" content="{{ $pageTitle ?? 'Happy Model Public School | Mungra Badshahpur, Jaunpur' }}">
-    <meta property="og:description" content="{{ $pageDescription ?? 'Nurturing confident learners with values, discipline and curiosity.' }}">
+    <meta property="og:title" content="{{ $pageTitle ?? 'KSN Public School | Mungra Badshahpur, Jaunpur' }}">
+    <meta property="og:description" content="{{ $pageDescription ?? 'Nurturing confident learners with values, discipline and academic excellence.' }}">
     <meta property="og:image" content="{{ asset('images/school_building.jpeg') }}">
     <meta property="og:type" content="website">
 
@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
 
-    <title>{{ $pageTitle ?? config('app.name') }}</title>
+    <title>{{ $pageTitle ?? ($school['name'] ?? config('app.name')) }}</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <!-- Google Translate Container (Hidden, controlled via custom UI) -->
+    <!-- Google Translate Container -->
     <div id="google_translate_element" style="display:none;"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {

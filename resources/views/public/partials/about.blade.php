@@ -1,11 +1,11 @@
-<!-- About HMPS Section -->
+<!-- About KSNPS Section -->
 <section id="about" class="bg-white py-20 lg:py-28 relative">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
                 <span class="eyebrow-badge eyebrow-badge-gold">
                     <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
-                    About Happy Model Public School
+                    About {{ $school['name'] }}
                 </span>
                 
                 <h2 class="mt-4 section-title">
@@ -16,7 +16,7 @@
 
                 <div class="mt-6 space-y-4 text-base sm:text-lg leading-relaxed text-slate-600">
                     <p>
-                        Established with a mission to deliver accessible, high-quality, English-medium education in Mungra Badshahpur, Jaunpur, <strong>Happy Model Public School (HMPS)</strong> creates an environment where young minds are encouraged to question, explore, and excel.
+                        Established with a mission to deliver accessible, high-quality, English-medium education in Mungra Badshahpur, Jaunpur, <strong>{{ $school['name'] }} ({{ $school['short'] ?? 'KSNPS' }})</strong> creates an environment where young minds are encouraged to question, explore, and excel.
                     </p>
                     <p>
                         Our pedagogical philosophy balances academic clarity with moral values, neat handwriting, disciplined habits, physical health, public speaking confidence, and active co-curricular participation.

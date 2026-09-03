@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500">
-                            <span>HMPS Leadership</span>
+                            <span>{{ $school['short'] ?? 'KSNPS' }} Leadership</span>
                             <span class="text-amber-600">★ ★ ★</span>
                         </div>
                     </div>

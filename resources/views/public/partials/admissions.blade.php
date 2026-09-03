@@ -10,7 +10,7 @@
                 <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-black text-[#0b2545]">
                     4-Step Admission Procedure
                 </h2>
-                <p class="mt-3 text-slate-600 text-base">Joining Happy Model Public School is a smooth and guided experience for parents.</p>
+                <p class="mt-3 text-slate-600 text-base">Joining {{ $school['name'] }} is a smooth and guided experience for parents.</p>
             </div>
 
             <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -64,7 +64,7 @@
                         </div>
                         <div>
                             <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">WhatsApp Support</p>
-                            <a href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20HMPS%2C%20I%20want%20to%20know%20about%20admissions." target="_blank" rel="noopener" class="text-sm font-bold text-emerald-700 hover:underline">Chat with Admission Desk ({{ $school['whatsapp_display'] ?? '+91 97938 56502' }})</a>
+                            <a href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20KSN%20Public%20School%2C%20I%20want%20to%20know%20about%20admissions." target="_blank" rel="noopener" class="text-sm font-bold text-emerald-700 hover:underline">Chat with Admission Desk ({{ $school['whatsapp_display'] ?? '+91 97938 56502' }})</a>
                         </div>
                     </div>
 

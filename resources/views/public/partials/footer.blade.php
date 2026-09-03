@@ -45,12 +45,13 @@
             <div>
                 <h3 class="text-sm font-black uppercase tracking-widest text-amber-400">Quick Navigation</h3>
                 <div class="mt-5 grid grid-cols-2 gap-2 text-xs sm:text-sm text-slate-300">
-                    <a href="#about" class="hover:text-amber-400 transition-colors py-1">About HMPS</a>
+                    <a href="#about" class="hover:text-amber-400 transition-colors py-1">About {{ $school['short'] ?? 'KSNPS' }}</a>
                     <a href="#vision-mission" class="hover:text-amber-400 transition-colors py-1">Vision & Mission</a>
                     <a href="#academics" class="hover:text-amber-400 transition-colors py-1">Curriculum</a>
                     <a href="#leadership" class="hover:text-amber-400 transition-colors py-1">Leadership Desk</a>
                     <a href="#facilities" class="hover:text-amber-400 transition-colors py-1">Facilities & Labs</a>
                     <a href="#transport" class="hover:text-amber-400 transition-colors py-1">Transport Fleet</a>
+                    <a href="#birthdays" class="hover:text-amber-400 transition-colors py-1">Birthday Stars 🎉</a>
                     <a href="#gallery" class="hover:text-amber-400 transition-colors py-1">Campus Photos</a>
                     <a href="#reviews" class="hover:text-amber-400 transition-colors py-1">Parent Reviews</a>
                     <a href="#downloads" class="hover:text-amber-400 transition-colors py-1">Prospectus</a>
@@ -75,7 +76,7 @@
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy"
-                        title="Happy Model Public School location map"
+                        title="{{ $school['name'] }} location map"
                     ></iframe>
                 </div>
 
@@ -95,7 +96,7 @@
             <div class="flex items-center gap-4">
                 <a href="#home" class="hover:text-white transition-colors">Back to Top ↑</a>
                 <span>•</span>
-                <a href="{{ url('/schoolAdmin') }}" class="text-amber-400 hover:underline">Admin / Staff Login</a>
+                <a href="{{ url('/schoolAdmin') }}" class="text-amber-400 hover:underline font-bold">Admin Portal Login</a>
             </div>
         </div>
     </div>

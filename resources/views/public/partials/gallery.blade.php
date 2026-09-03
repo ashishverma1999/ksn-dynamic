@@ -7,7 +7,7 @@
                     <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
                     Campus Photo Gallery
                 </span>
-                <h2 class="mt-3 section-title">Life & Moments at Happy Model Public School</h2>
+                <h2 class="mt-3 section-title">Life & Moments at {{ $school['name'] }}</h2>
                 <p class="mt-3 text-slate-600 text-base">Explore our vibrant classrooms, cultural celebrations, sports day drills, science projects, and campus facilities ({{ count($galleryItems) }} photos).</p>
             </div>
 
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <!-- 37 Images Grid -->
+        <!-- Images Grid -->
         <div class="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" data-gallery-grid>
             @foreach ($galleryItems as $item)
                 <article 
@@ -38,7 +38,7 @@
                     data-gallery-category="{{ $item['category'] }}"
                     data-image-src="{{ asset(ltrim($item['image'], '/')) }}"
                     data-image-title="{{ $item['title'] }}"
-                    data-image-desc="{{ $item['description'] ?? 'Campus moment at Happy Model Public School' }}"
+                    data-image-desc="{{ $item['description'] ?? 'Campus moment at ' . $school['name'] }}"
                 >
                     <img 
                         src="{{ asset(ltrim($item['image'], '/')) }}" 
@@ -79,7 +79,7 @@
         <div class="flex items-center justify-between px-5 py-3.5 bg-slate-950/80 border-b border-white/10 text-white">
             <div class="flex items-center gap-3">
                 <span class="rounded bg-amber-400 px-2 py-0.5 text-xs font-bold text-slate-950" data-lightbox-category>Campus</span>
-                <span class="text-xs text-slate-400 font-bold" data-lightbox-counter>1 / 37</span>
+                <span class="text-xs text-slate-400 font-bold" data-lightbox-counter>1 / {{ count($galleryItems) }}</span>
             </div>
             <button type="button" class="text-slate-300 hover:text-white rounded-lg p-1.5 hover:bg-white/10 transition-colors" data-lightbox-close aria-label="Close Lightbox">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>

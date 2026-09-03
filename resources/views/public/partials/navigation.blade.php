@@ -21,7 +21,7 @@
                         <span>{{ $label }}</span>
                         <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-500 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </a>
-                    <div class="invisible absolute left-0 top-full w-60 rounded-xl border border-slate-100 bg-white p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:translate-y-1">
+                    <div class="invisible absolute left-0 top-full w-64 rounded-xl border border-slate-100 bg-white p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:translate-y-1">
                         @foreach ($items as $item)
                             <a href="{{ $item['href'] }}" class="block rounded-lg px-3.5 py-2.5 text-sm font-semibold text-slate-700 hover:bg-amber-50 hover:text-[#0b2545] transition-colors">
                                 {{ $item['label'] }}
@@ -31,7 +31,9 @@
                 </div>
             @endforeach
 
-            <a href="#gallery" class="nav-item">Gallery ({{ $allImagesCount ?? 37 }})</a>
+            <a href="#birthdays" class="nav-item text-amber-700 font-bold">Birthdays 🎉</a>
+            <a href="#gallery" class="nav-item">Gallery</a>
+            <a href="#reviews" class="nav-item">Reviews</a>
             <a href="#contact" class="nav-item">Contact</a>
 
             <a href="#admissions" class="ml-3 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-4 py-2.5 text-sm font-extrabold text-white shadow-md hover:from-amber-600 hover:to-amber-700 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
@@ -42,9 +44,8 @@
 
         <!-- Mobile Action Buttons & Menu Toggle -->
         <div class="flex items-center gap-2 lg:hidden">
-            <!-- Mobile Direct WhatsApp Icon Button -->
             <a 
-                href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20Happy%20Model%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
+                href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20KSN%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
                 target="_blank" 
                 rel="noopener" 
                 class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md active:scale-95 transition-all" 
@@ -80,7 +81,9 @@
             @endforeach
 
             <div class="pt-2">
+                <a href="#birthdays" class="block rounded-lg px-3 py-2 text-base font-bold text-amber-700 hover:bg-amber-50">Birthday Stars 🎉</a>
                 <a href="#gallery" class="block rounded-lg px-3 py-2 text-base font-bold text-[#0b2545] hover:bg-amber-50">Photo Gallery ({{ $allImagesCount ?? 37 }})</a>
+                <a href="#reviews" class="block rounded-lg px-3 py-2 text-base font-bold text-[#0b2545] hover:bg-amber-50">Parent Reviews</a>
                 <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-bold text-[#0b2545] hover:bg-amber-50">Contact Us</a>
             </div>
 
@@ -100,7 +103,7 @@
 
                 <!-- WhatsApp Mobile Drawer CTA -->
                 <a 
-                    href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20Happy%20Model%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
+                    href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20KSN%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
                     target="_blank" 
                     rel="noopener" 
                     class="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 py-3 text-sm font-bold text-white shadow-md active:scale-98 transition-all"

@@ -11,10 +11,20 @@ class AdminUserSeeder extends Seeder
     public function run(): void
     {
         User::updateOrCreate(
-            ['email' => 'admin@happymodelpublicschool.in'],
+            ['email' => 'admin@ksnpublicschool.edu.in'],
             [
-                'name' => 'HMPS Administrator',
-                'password' => Hash::make('Admin@HMPS2026'),
+                'name' => 'KSN Administrator',
+                'password' => Hash::make('Admin@KSN2026'),
+                'email_verified_at' => now(),
+            ]
+        );
+
+        // Also ensure a quick login alias if preferred
+        User::updateOrCreate(
+            ['email' => 'admin@admin.com'],
+            [
+                'name' => 'School Admin',
+                'password' => Hash::make('password'),
                 'email_verified_at' => now(),
             ]
         );

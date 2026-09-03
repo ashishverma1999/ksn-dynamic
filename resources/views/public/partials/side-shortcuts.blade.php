@@ -22,7 +22,7 @@
 
     <!-- Main Floating WhatsApp Icon Button (Mobile & Desktop) -->
     <a 
-        href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20Happy%20Model%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
+        href="https://wa.me/{{ $school['whatsapp'] ?? '919793856502' }}?text=Hello%20KSN%20Public%20School%2C%20I%20would%20like%20to%20enquire%20about%20admissions." 
         target="_blank" 
         rel="noopener" 
         class="group relative flex h-14 w-14 sm:h-15 sm:w-15 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl shadow-emerald-950/40 hover:bg-[#20ba59] hover:scale-105 active:scale-95 transition-all duration-300 ring-4 ring-white/80"
