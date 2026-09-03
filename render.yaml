@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: school-website
+    env: php
+    plan: free
+    buildCommand: "./.render-build.sh"
+    startCommand: "bash ./.render-start.sh"
+    envVars:
+      - key: APP_URL
+        value: https://modern-school-website.onrender.com
+      - key: ASSET_URL
+        value: https://modern-school-website.onrender.com
