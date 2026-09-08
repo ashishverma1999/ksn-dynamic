@@ -18,7 +18,12 @@
                     <div class="relative">
                         <!-- Portrait Image with Zoom Effect -->
                         <div class="h-72 w-full overflow-hidden bg-slate-200">
-                            <img src="{{ asset(ltrim($message['image'], '/')) }}" alt="{{ $message['name'] }} - {{ $message['title'] }}" class="h-full w-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <img 
+                                src="{{ $message['image'] ?? asset('images/director.jpeg') }}" 
+                                alt="{{ $message['name'] }} - {{ $message['title'] }}" 
+                                class="h-full w-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                                onerror="this.onerror=null; this.src='{{ asset("images/director.jpeg") }}';"
+                            >
                         </div>
                         <!-- Role Badge Overlay -->
                         <div class="absolute bottom-3 left-3 right-3">

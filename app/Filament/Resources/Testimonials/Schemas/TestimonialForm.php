@@ -46,7 +46,9 @@ class TestimonialForm
                         FileUpload::make('image')
                             ->label('Parent / Student Photo (Optional)')
                             ->image()
+                            ->disk('public')
                             ->directory('testimonials')
+                            ->visibility('public')
                             ->imageEditor()
                             ->columnSpanFull(),
                         Textarea::make('quote')

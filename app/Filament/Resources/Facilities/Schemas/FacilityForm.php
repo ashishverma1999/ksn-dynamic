@@ -44,7 +44,9 @@ class FacilityForm
                         FileUpload::make('image')
                             ->label('Facility Photo (Optional)')
                             ->image()
+                            ->disk('public')
                             ->directory('facilities')
+                            ->visibility('public')
                             ->imageEditor()
                             ->columnSpanFull(),
                         Textarea::make('description')

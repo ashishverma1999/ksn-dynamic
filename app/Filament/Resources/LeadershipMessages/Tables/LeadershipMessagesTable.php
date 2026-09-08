@@ -16,7 +16,8 @@ class LeadershipMessagesTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image')
+                ImageColumn::make('image_url')
+                    ->label('Photo')
                     ->circular()
                     ->defaultImageUrl('/images/director.jpeg'),
                 TextColumn::make('title')

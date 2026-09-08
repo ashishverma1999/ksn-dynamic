@@ -17,7 +17,8 @@ class GalleriesTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image')
+                ImageColumn::make('image_url')
+                    ->label('Image')
                     ->square(),
                 TextColumn::make('title')
                     ->searchable()

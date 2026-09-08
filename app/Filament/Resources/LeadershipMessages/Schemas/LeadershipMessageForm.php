@@ -41,7 +41,9 @@ class LeadershipMessageForm
                         FileUpload::make('image')
                             ->label('Profile Photo')
                             ->image()
+                            ->disk('public')
                             ->directory('leadership')
+                            ->visibility('public')
                             ->imageEditor()
                             ->columnSpanFull(),
                         Textarea::make('message')

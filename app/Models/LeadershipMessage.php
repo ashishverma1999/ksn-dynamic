@@ -37,10 +37,44 @@ class LeadershipMessage extends Model
             return '/images/director.jpeg';
         }
 
-        if (str_starts_with($this->image, 'http://') || str_starts_with($this->image, 'https://') || str_starts_with($this->image, '/images/')) {
-            return $this->image;
+        $img = trim((string) $this->image);
+
+        if (str_starts_with($img, 'http://') || str_starts_with($img, 'https://')) {
+            return $img;
         }
 
-        return Storage::url($this->image);
+        if (str_starts_with($img, '/storage/') || str_starts_with($img, 'storage/')) {
+            return '/' . ltrim($img, '/');
+        }
+
+        if (str_starts_with($img, '/images/') || str_starts_with($img, 'images/')) {
+            return '/' . ltrim($img, '/');
+        }
+
+        if (file_exists(public_path('images/' . ltrim($img, '/')))) {
+            return '/images/' . ltrim($img, '/');
+        }
+
+        if (file_exists(public_path(ltrim($img, '/')))) {
+            return '/' . ltrim($img, '/');
+        }
+
+        if (Storage::disk('public')->exists($img)) {
+            return '/storage/' . ltrim($img, '/');
+        }
+
+        if (Storage::disk('public')->exists('leadership/' . ltrim($img, '/'))) {
+            return '/storage/leadership/' . ltrim($img, '/');
+        }
+
+        if (Storage::disk('public')->exists('images/' . ltrim($img, '/'))) {
+            return '/storage/images/' . ltrim($img, '/');
+        }
+
+        if (str_contains($img, '/')) {
+            return '/storage/' . ltrim($img, '/');
+        }
+
+        return '/images/' . ltrim($img, '/');
     }
 }

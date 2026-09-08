@@ -16,7 +16,8 @@ class BirthdaysTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image')
+                ImageColumn::make('image_url')
+                    ->label('Photo')
                     ->circular()
                     ->defaultImageUrl('/images/classroom1.jpeg'),
                 TextColumn::make('name')

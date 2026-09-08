@@ -54,7 +54,9 @@ class BirthdayForm
                         FileUpload::make('image')
                             ->label('Photo / Avatar')
                             ->image()
+                            ->disk('public')
                             ->directory('birthdays')
+                            ->visibility('public')
                             ->imageEditor()
                             ->columnSpanFull(),
                         Textarea::make('wishes')

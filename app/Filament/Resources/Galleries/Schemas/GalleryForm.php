@@ -34,7 +34,9 @@ class GalleryForm
                             ->required(),
                         FileUpload::make('image')
                             ->image()
+                            ->disk('public')
                             ->directory('gallery')
+                            ->visibility('public')
                             ->imageEditor()
                             ->columnSpanFull(),
                         Textarea::make('description')

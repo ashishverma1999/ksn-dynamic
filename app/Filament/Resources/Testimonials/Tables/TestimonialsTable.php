@@ -16,7 +16,8 @@ class TestimonialsTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image')
+                ImageColumn::make('image_url')
+                    ->label('Photo')
                     ->circular()
                     ->defaultImageUrl('/images/school_building.jpeg'),
                 TextColumn::make('name')
